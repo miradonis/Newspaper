@@ -1,0 +1,208 @@
+/*
+*=====================================================
+*                   FONTS, COLORS
+
+* Font: Cormorant Garamond
+
+* COLORS: 
+* rgb(233, 233, 224),
+* #333
+
+*====================================================
+*/
+
+/*
+?==================================================
+?                 GENERAL & FONTS
+?==================================================
+*/
+@font-face {
+    font-family: CormorantGaramond-Bold;
+    src: url("../fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf");
+}
+
+@font-face {
+    font-family: CormorantGaramond-Medium;
+    src: url("../fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    background-color: rgb(233, 233, 224);
+}
+
+/*
+?==================================================
+?                   HEADER
+?==================================================
+*/
+
+body header h1 {
+    font-family: CormorantGaramond-Bold;
+    text-transform: capitalize;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+body header h1 span {    
+    font-size: 7rem;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+/*--------------------ul-flex---------------------*/
+.list {
+    width: 90%;
+    margin: 7vh auto 0 auto;
+    border-bottom: 5px double black;
+    border-top: 5px double black;
+}
+body header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 1vh 0;
+}
+
+body header ul li {
+    font-size: 2rem;
+}
+
+/*--------------------grid--------------------*/
+.grid {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto 20vh auto;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 15% 18% 31% auto;
+    /* gap: 10px 15px; */
+}
+
+.grid h2 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    font-size: 4rem;
+    margin: 3% 0 0 11%;
+}
+
+h3 {
+    font-size: 2.7rem;
+}
+
+p {
+    text-align: left;
+    font-size: 1.8rem;
+    width: 83%;
+}
+
+
+.text1 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.text2 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.text3 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.text4 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.text5 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
+
+.text6 {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+
+/*----------------IMG----------------*/
+.img__kitchen {
+    grid-column: 3 / 5;
+    grid-row: 2 / 5;
+    width: 100%;
+}
+
+.img__kitchen img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/*----------FLEX_IN_GRID-------------*/
+.flex__in__grid {
+    grid-column: 5 / 6;
+    grid-row: 1 / 5;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.flex__in__grid h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 6vh 3vw 0 0;
+}
+
+.flex__in__grid div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    width: 270px;
+    border: 5px double black;
+    margin-top: 8vh;
+}
+
+.flex__in__grid div:nth-of-type(1) {
+    font-family: CormorantGaramond-Bold;
+    font-size: 5.3rem;
+    text-align: center;
+}
+
+.flex__in__grid div:nth-of-type(2) p:nth-of-type(1) {
+    font-family: CormorantGaramond-Bold;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.flex__in__grid div:nth-of-type(2) p:nth-of-type(2) {
+    font-family: CormorantGaramond-Medium;
+    text-align: center;
+}
+
+.flex__in__grid div:nth-of-type(2) p:nth-of-type(3) {
+    font-family: CormorantGaramond-Medium;
+    color: grey;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 3vh;
+}
+
+.ikea__pic {
+    width: 50%;
+}
+
+.ikea__pic img {
+    width: 80%;
+    height: 75%;
+}
